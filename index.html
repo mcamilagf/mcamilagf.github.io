@@ -140,6 +140,18 @@ e<!-- This HTML file provides a simple example of a portfolio page. It contains 
 </div>
 <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section>
+<section>
+        <div class="chart-description">
+            <h2>Section 8: Real Weekly Wage in UK (2000-2024)</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Real weekly wages in the UK from 2000 to 2024 have fluctuated significantly due to economic conditions and inflation.
+                After steady growth in the early 2000s, wages stagnated following the 2008 financial crisis and struggled to recover in subsequent years.
+                The COVID-19 pandemic further disrupted wage growth, although government support measures helped stabilize incomes.
+                By 2024, while real weekly wages are anticipated to have improved, rising living costs and inflation continue to challenge workers' purchasing power.
+            </p>
+        </div>
+        <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
 
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
@@ -159,7 +171,7 @@ e<!-- This HTML file provides a simple example of a portfolio page. It contains 
         let figure_5_spec = "graph_2"; // Inflation since 1800
         let figure_6_spec = "graph_3"; // Comparing four economies
         let figure_7_spec = "GER_unemployment"; // Unemployment rate in Germany (2000-2022)
-
+        let figure_8_spec = "UK_salary_week"; // Real Weekly Wage in UK (2000-2024)
       
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
@@ -175,6 +187,7 @@ e<!-- This HTML file provides a simple example of a portfolio page. It contains 
         vegaEmbed('#Location5', figure_5_spec)
         vegaEmbed('#Location6', figure_6_spec)
         vegaEmbed('#Location7', figure_7_spec)
+        vegaEmbed('#Location8', figure_8_spec)
 
 
     </script>
